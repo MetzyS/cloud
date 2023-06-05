@@ -1,0 +1,11 @@
+@import "common.css";
+@import "blocks/navigation.css";
+@import "blocks/header.css";
+@import "blocks/categories.css";
+@import "blocks/upload.css";
+@import "blocks/files.css";
+@import "blocks/profil.css";
+@import "blocks/login.css";
+@import "blocks/comptes.css";
+@import "blocks/search.css";
+@import "blocks/404.css";

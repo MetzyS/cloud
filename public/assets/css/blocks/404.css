@@ -1,0 +1,59 @@
+/* 404 */
+.notfound {
+    display: unset;
+}
+
+.notfound-logo {
+    display: flex;
+    justify-content: center;
+    padding: 25px 20px;
+}
+
+.notfound__svg {
+    max-width: 350px;
+}
+
+.notfound-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notfound__title {
+    font-weight: bold;
+    font-size: 72px;
+    color: #97A3BA;
+}
+
+.noutfound__text {
+    font-weight: bold;
+    font-size: 22px;
+    color: #32375B;
+    margin-bottom: 65px;
+}
+
+.notfound__link {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 16px 65px;
+    background-color: #636EFE;
+}
+
+@media screen and (min-width: 1024px) {
+    .notfound__title {
+        font-size: 120px;
+    }
+
+    .notfound__text {
+        font-size: 36px;
+    }
+
+    .notfound__link {
+        font-size: 20px;
+        padding: 16px 80px;
+    }
+}

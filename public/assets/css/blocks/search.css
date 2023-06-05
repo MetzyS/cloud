@@ -1,0 +1,14 @@
+.search__message {
+    font-weight: 400;
+    padding: 0 20px;
+}
+
+.search__message-keyword {
+    font-weight: var(--bold);
+}
+
+@media screen and (min-width: 1024px) {
+    .search__message {
+        padding: unset;
+    }
+}

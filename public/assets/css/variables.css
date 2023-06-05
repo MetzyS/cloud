@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #636EFE;
+    --primary-color-light: #F9FBFF;
+    --typed-font: 'Open Sans', sans-serif;
+    --primary-title-s: 20px;
+    --text-s: 14px;
+    --text-primary-c: #32375B;
+    --text-secondary-c: #949494;
+    --link-action-c: #FFFFFF;
+    --border: 1px solid;
+    --border-color: #EBEBEB;
+    --primary-color-selected: #F0F1FF;
+    --nav-bg: #FFFFFF;
+    --table-border: 2px solid;
+    --table-border-c: #EEEFFF;
+    --file-action-border-c: #F2F4FF;
+    --bold: 700;
+    --border-radius-s: 3px;
+    --border-radius-m: 5px;
+    --text-s-ios: 18px;
+    --storage-range: 50%;
+    --profile-secondary-c: #32375B;
+    --header-search-height: 40px;
+    --folder-bg: #FFFFFF;
+    --error-c: #FF0000;
+    --error-bg: #FFEBEB;
+    --confirm-c: #636EFE;
+    --confirm-bg: #E5EEFF;
+    --message-c: #4F4F4F;
+    --message-bg: #F4F4F4;
+    --placeholder-c: #C3C3C3;
+    --padding-m: 20px;
+}

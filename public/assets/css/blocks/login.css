@@ -1,0 +1,232 @@
+/* Login form */
+.login {
+    display: block;
+    font-weight: 400;
+    color: #000000;
+    background-color: #fff;
+}
+
+.login__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 15px 15px;
+    border: var(--border) var(--primary-color);
+    border-radius: var(--border-radius-m);
+    margin: 10% auto;
+}
+
+.login__step {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+.login__form fieldset {
+    border: none;
+    margin: 50px 0 30px;
+}
+
+.login__title {
+    font-size: calc(var(--primary-title-s)*1.1);
+    font-weight: 700;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.login__message {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.message-error + .login__label .login__input {
+    border-color: var(--error-c);
+}
+
+.login__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-error + .login__label .label__text {
+    color: var(--error-c);
+}
+
+.label__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    color: var(--primary-color);
+    padding: 5px;
+    background-color: #fff;
+    margin-left: 15px;
+    margin-top: -15px;
+}
+
+.login__input {
+    min-height: 58px;
+    padding: 20px 30px;
+    border: var(--border) var(--primary-color);
+    border-radius: var(--border-radius-m);
+}
+
+.login__input--password {
+    width: calc(100% - 20px);
+}
+
+.login__input:focus,
+.message-error + .login__label .login__input:focus  {
+    outline: none;
+    border: var(--border) var(--text-primary-c);
+}
+
+.login__input:focus~.label__text {
+    color: var(--text-primary-c);
+}
+
+
+.login__btn {
+    font-size: calc(var(--text-s) * 1.15);
+    color: var(--link-action-c);
+    padding: 15px 65px;
+    background-color: var(--primary-color);
+    border: var(--border) var(--primary-color);
+    border-radius: var(--border-radius-m);
+    cursor: pointer;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.login__btn:hover {
+    color: var(--primary-color);
+    background-color: white;
+}
+
+.login__btn:active {
+    color: var(--text-primary-c);
+    background-color: var(--primary-color-selected);
+}
+
+.login__btn:disabled {
+    color: var(--message-bg);
+    background-color: var(--message-c);
+    border: var(--border) var(--message-c);
+    box-shadow: none;
+    cursor: auto;
+}
+
+.login__link {
+    display: inline-flex;
+    text-decoration: none;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+.login-forgot-container {
+    position: relative;
+}
+
+.login__link--forgot {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    display: flex;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.login__link--forgot:hover,
+.login__link--forgot:active,
+.login__link:hover,
+.login__link:active {
+    text-decoration: underline;
+}
+
+.login__link--forgot:active,
+.login__link:active {
+    color: var(--text-primary-c);
+}
+
+.login__input-container {
+    display: flex;
+    align-items: center;
+}
+
+.label-icon-container {
+    padding: 0 15px;
+    height: 58px;
+    display: flex;
+    border: var(--border) var(--primary-color);
+    border-left: none;
+    border-top-right-radius: var(--border-radius-m);
+    border-bottom-right-radius: var(--border-radius-m);
+    cursor: pointer;
+}
+
+.message-error + .login__label .label-icon-container {
+    border-color: var(--error-c);
+}
+
+.label-icon-container svg {
+    align-self: center;
+    fill: var(--primary-color);
+    stroke: none;
+}
+
+.message-error + .login__label .label-icon-container svg {
+    fill: var(--error-c);
+}
+
+.login__input-container input {
+    flex-grow: 1;
+    border-right: none;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+}
+
+.message-error + .login__label .login__input:focus~span,
+.login__input:focus~span {
+    border-color: var(--text-primary-c);
+}
+
+.message-error + .login__label .login__input:focus~span svg,
+.message-error + .login__label .login__input:active~span svg,
+.login__input:focus~span svg,
+.login__input:active~span svg {
+    fill: var(--text-primary-c);
+}
+
+#password {
+    border-right: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .login__form {
+        display: flex;
+        flex-direction: column;
+        width: 670px;
+        padding: 15px 45px;
+        margin: 10% auto;
+    }
+
+    .login__step {
+        right: 45px;
+    }
+
+    .login__title {
+        font-size: calc(var(--primary-title-s) * 1.5);
+    }
+
+    .login__message {
+        text-align: unset;
+    }
+
+    .login__btn {
+        width: unset;
+    }
+}

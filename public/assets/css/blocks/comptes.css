@@ -1,0 +1,210 @@
+/* Comptes */
+.comptes__form {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding: 0 20px;
+}
+
+.comptes__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.comptes__form thead {
+    display: none;
+}
+
+.comptes__row {
+    border-bottom: var(--table-border) var(--table-border-c);
+}
+
+.compte {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0 45px;
+}
+
+.compte--admin {
+    color: var(--text-secondary-c);
+}
+
+.comptes__cell {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comptes__cell--mdp .wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.comptes__cell--mdp .container {
+    display: flex;
+    align-items: center;
+}
+
+.compte .comptes__cell:first-of-type {
+    margin-bottom: 20px;
+}
+
+.compte .comptes__cell:last-of-type {
+    margin-top: 25px;
+}
+
+.compte__label {
+    display: flex;
+    width: 75px;
+}
+
+.compte__input:not([type="checkbox"]) {
+    flex-grow: 1;
+    font-weight: 700;
+    padding: 8px 10px;
+}
+
+.compte__link {
+    position: absolute;
+    right: 0;
+    padding: 10px 10px;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+
+.comptes__btn--add,
+.comptes__btn {
+    font-weight: bold;
+    width: 100%;
+    padding: 8px 35px;
+    margin-bottom: 40px;
+    border: var(--border) var(--primary-color);
+    border-radius: var(--border-radius-m); 
+}
+
+.comptes__btn--add {
+    background-color: var(--link-action-c);
+    color: var(--primary-color);
+}
+
+.comptes__btn--add:hover,
+.comptes__btn--add:active {
+    color: var(--text-primary-c);
+    border-color: var(--text-primary-c);
+    text-decoration: underline;
+}
+
+.comptes__btn {
+    background-color: var(--primary-color);
+    color: var(--link-action-c);
+}
+
+.password__table {
+    border-collapse: collapse;
+    margin: 10px 0 10px;
+    padding: 8px 10px;
+}
+
+.password__table thead td {
+    padding: 10px 15px 10px 10px;
+    color: var(--text-secondary-c);
+    font-weight: 400;
+    border-bottom: var(--table-border) var(--table-border-c);
+}
+
+.password__table td {
+    padding: 5px 10px 5px 10px;
+    border-bottom: var(--table-border) var(--table-border-c);
+}
+
+@media screen and (min-width: 1024px) {
+    .comptes__form {
+        padding: 0;
+        margin: 60px 0;
+        max-width: 720px;
+    }
+
+    .comptes__form thead {
+        display: table-header-group;
+        color: var(--text-secondary-c);
+    }
+
+    .compte {
+        display: table-row;
+    }
+
+    .comptes__cell {
+        display: table-cell;
+        padding: 10px 15px 10px 0;
+    }
+
+    .comptes__cell--mdp .wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .compte .comptes__cell:first-of-type {
+        margin: 0;
+    }
+
+    .compte .comptes__cell:last-of-type {
+        margin: 0;
+    }
+
+    .compte__label {
+        display: none;
+    }
+
+    .compte__input:not([type="checkbox"]) {
+        flex-grow: unset;
+        padding: 6px 10px;
+        width: 105px;
+    }
+
+    .comptes__cell--mail .compte__input {
+        width: 165px;
+    }
+
+    .compte__cell--role {
+        display: flex;
+        gap: 30px;
+    }
+
+    .compte--admin .compte__cell--role select {
+        margin-top: 5px;
+    }
+
+    .comptes__cell input[type="checkbox"] {
+        margin: 0 0 0 15px;
+    }
+
+    .compte__link {
+        position: unset;
+    }
+
+    .comptes__btn--add,
+    .comptes__btn {
+        width: unset;
+        max-width: 200px;
+        text-align: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .comptes__btn--add:active,
+    .comptes__btn:active {
+        background-color: var(--primary-color-selected);
+    }
+
+    .password__table thead td {
+        padding-left: 0;
+    }
+    
+    .password__table td {
+        padding-left: 0;
+    }
+}
