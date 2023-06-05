@@ -5,10 +5,9 @@ Crée en autonomie, from scratch, dans le cadre d'un stage en entreprise pour le
 Ce projet respecte les demandes directes du maître de stage (comme la taille des fichiers max, les caractères autorisés dans le nom des fichiers/dossiers etc.).
 
 #### Use case :
-
+![use case](https://raw.githubusercontent.com/MetzyS/cloud/master/public/assets/presentation/usecase.jpg)
 
 #### Liens :
-
 La plus part des liens utilisés sont des liens **absolus**, il faudra donc respecter la structure requise ou modifier tout les liens dans le code.
 - Créez un dossier nommé 'cloud' dans htdocs/www/.
 - Clonez le repo dans 'cloud'.
