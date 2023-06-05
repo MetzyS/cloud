@@ -1,13 +1,14 @@
-# Projet Cloud :fr:
+# <img src="https://raw.githubusercontent.com/MetzyS/cloud/ca9e05b604602ff97e60727ffa9814b6d6739397/public/assets/presentation/LogoAd.svg" width="35px">&emsp; Projet Cloud :fr: 
 
 ### Plateforme de partage de fichiers. 
 Crée en autonomie, from scratch, dans le cadre d'un stage en entreprise pour le titre professionnel Développeur Web et Web Mobile.
 Ce projet respecte les demandes directes du maître de stage (comme la taille des fichiers max, les caractères autorisés dans le nom des fichiers/dossiers etc.).
 
 #### Use case :
-![use case](https://raw.githubusercontent.com/MetzyS/cloud/master/public/assets/presentation/usecase.jpg)
+<img src="https://raw.githubusercontent.com/MetzyS/cloud/master/public/assets/presentation/usecase.jpg" alt="Use case" width="500px">
 
 #### Liens :
+
 La plus part des liens utilisés sont des liens **absolus**, il faudra donc respecter la structure requise ou modifier tout les liens dans le code.
 - Créez un dossier nommé 'cloud' dans htdocs/www/.
 - Clonez le repo dans 'cloud'.
