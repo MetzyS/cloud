@@ -9,12 +9,12 @@ Ce projet respecte les demandes directes du maître de stage (comme la taille de
 
 #### Liens :
 
-La plus part des liens utilisés sont des liens **absolus**, il faudra donc respecter la structure requise ou modifier tout les liens dans le code.
+La plupart des liens utilisés sont des liens absolus, il faudra donc respecter la structure requise ou modifier tous les liens dans le code.
 - Créez un dossier nommé 'cloud' dans htdocs/www/.
 - Clonez le repo dans 'cloud'.
 
 #### Base de données :
-Vous trouverez le code a importer directement (via votre sgbd) dans le dossier /sql/
+Vous trouverez le code à importer directement (via votre sgbd) dans le dossier /sql/
 
 #### Connexion :
 
@@ -25,7 +25,7 @@ Utilisez l'adresse **'test\@mail.com'** et le mot de passe **'Test123\@\*\*\*'**
 Permet de se connecter sans mot de passe valable, en utilisant l'adresse 'test\@mail.com' et le mot de passe 'Test123\@\*\*\*', a supprimer obligatoirement lors du passage en prod.
 
 2) **app/views/account/index.php** *lignes 23 à 27 + 38 à 42*
-Permettent d'afficher les mots de passes aléatoires générés lors de la création ou la modification d'un compte, a supprimer obligatoirement lors du passage en prod.
+Permettent d'afficher les mots de passe aléatoires générés lors de la création ou la modification d'un compte, a supprimer obligatoirement lors du passage en prod.
 
 3) **app/controllers/HomeController.php** méthode **passwordForgot()** *lignes 176 à 208*
 Utilisation de PHPMailer, il faudra donc entrer les informations requises concernant la configuration de l'adresse mail a utiliser (smtp, username, password etc.).
