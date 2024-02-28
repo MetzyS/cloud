@@ -10,9 +10,8 @@ Ce projet respecte les demandes directes du maître de stage (comme la taille de
 #### Liens :
 
 La plupart des liens utilisés sont des liens absolus, il faudra donc respecter la structure requise ou modifier tous les liens dans le code.
-- Créez un dossier nommé 'cloud' dans htdocs/www/.
-- Clonez le repo dans 'cloud'.
-- Créez un dossier 'files' dans 'cloud'.
+- Clonez le repo dans dans htdocs/www/
+- Créez un dossier 'files' dans le dossier 'cloud'.
 
 #### Base de données :
 Vous trouverez le code à importer directement (via votre sgbd) dans le dossier /sql/
